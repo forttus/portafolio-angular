@@ -1,0 +1,9 @@
+<div>
+    <a *ngFor="let producto of productoService.Productosfiltrado" [routerLink]="['/item', producto.cod]" class="rk-item ae-masonry__item "><img src="assets/productos/{{producto.url}}.jpg ">
+        <div class="item-meta ">
+            <h2>{{producto.titulo}}</h2>
+            <p>{{producto.categoria}}</p>
+        </div>
+    </a>
+
+</div>
